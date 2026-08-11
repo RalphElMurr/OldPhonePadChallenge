@@ -123,25 +123,3 @@ Pressing past the last character wraps: `2222#` → `A`.
 | `GET` | `/v1/keypad` | Describe the keypad, for building a UI |
 | `GET` | `/health` | Liveness probe |
 
-```bash
-curl -X POST http://localhost:5080/v1/decode \
-  -H 'Content-Type: application/json' \
-  -d '{"input":"4433555 555666#"}'
-```
-
-```json
-{ "input": "4433555 555666#", "output": "HELLO", "keyPressCount": 14 }
-```
-
-Errors come back as [RFC 9457](https://www.rfc-editor.org/rfc/rfc9457) problem documents. Full integration guide: **[docs/HOW-TO.md](docs/HOW-TO.md)**.
-
-### Docker
-
-```bash
-docker build -f src/OldPhonePad.Api/Dockerfile -t oldphonepad-api .
-docker run -p 8080:8080 oldphonepad-api
-```
-
-## Licence
-
-MIT. See [LICENSE](LICENSE).
