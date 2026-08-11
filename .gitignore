@@ -1,0 +1,23 @@
+## .NET
+bin/
+obj/
+artifacts/
+*.user
+*.suo
+.vs/
+.vscode/
+.idea/
+TestResults/
+[Dd]ebug/
+[Rr]elease/
+*.nupkg
+*.snupkg
+
+## Coverage
+coverage*.json
+coverage*.xml
+*.coverage
+
+## OS
+.DS_Store
+Thumbs.db
