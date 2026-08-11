@@ -34,11 +34,8 @@ OldPhonePad/
 │   ├── OldPhonePad/            the library
 │   └── OldPhonePad.Api/        REST wrapper + demo page
 ├── tests/
-│   └── OldPhonePad.Tests/      unit tests + API tests
-└── docs/
-    ├── HOW-TO.md               customer integration guide
-    ├── ARCHITECTURE.md         why it is shaped this way
-    └── AI-PROMPT.md            AI tooling disclosure
+    └── OldPhonePad.Tests/      unit tests + API tests
+
 ```
 
 **`src/OldPhonePad`** — seven files, no dependencies. This is the deliverable.
